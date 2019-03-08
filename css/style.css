@@ -1,0 +1,164 @@
+/*通常对于样式的设定是从大到小，先设定通用类，再定义个别类*/
+
+
+/*对整个body链接字体样式，这个字体是通过链接google字体来的，但是此处需要调用一下*/
+body{
+    /*这个是说我们尽量使用Lato字体，如果找不到，使用sans-serif字体*/
+    font-family: 'Lato', sans-serif;
+    /*添加颜色，默认情况下会使用这种颜色，可以取消*/
+    color: #2d3c49;
+    /*载入字体粗细，并默认使用较粗的*/
+    font-weight: 300;
+}
+
+/*设置标题和图表，使得他们可以向左向右对齐*/
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.title-div-1{
+        width: 20%;
+    }
+.title-div-2{
+        width: 75%;
+    }
+
+.container{
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+}
+
+/*Feature Work:将字体变淡*/
+.text-muted{
+    color: #7d97ad;
+}
+/*标题：将字体变得更细*/
+.text-thin{
+    font-weight: 100;
+}
+
+/*设置标题字体大小*/
+.title-super{
+    font-size: 60px;
+}
+/*设置图标的上边距*/
+.title{
+    margin-top: 2em;
+}
+
+/*如何设置下划线*/
+hr{
+    color: #7d97ad;
+    border-top: 0.3em solid;
+}
+
+.h2-2{
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+}
+.h2-1{
+    margin-left: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+p{
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 1.2em;
+}
+/*实现图片右对齐*/
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/*使用弹性框*/
+.small-images-divs{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*添加媒体查询1*/
+@media only screen and (min-width:1000px) {
+    .container{
+        width: 960px;
+    }
+    /*设置一下图片宽度，防止溢出*/
+    .small-image{
+        width: 100%;
+    }
+}
+
+/*添加媒体查询2*/
+@media only screen and (min-width:620px) and (max-width: 999px) {
+    /*总宽度设置成100%*/
+    .container{
+        width: 100%;
+    }
+    /*装图片的框子变成50%*/
+    .small-image-div{
+        width:50%;
+        height: auto;
+    }
+
+    /*图片填充框子*/
+    .small-image{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 619px) {
+    /*总宽度设置成100%*/
+    .container{
+        width: 100%;
+    }
+    /*图片自动变成两行，使用弹性框*/
+    .small-images-divs{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*装图片的框子变成100%*/
+    .small-image-div{
+        width:100%;
+        height: auto;
+    }
+    /*图片填充框子*/
+    .small-image{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /*总宽度设置成100%*/
+    .container{
+        width: 100%;
+    }
+    /*图片自动变成两行，使用弹性框*/
+    .small-images-divs{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*装图片的框子变成100%*/
+    .small-image-div{
+        width:100%;
+        height: auto;
+    }
+    /*图片填充框子*/
+    .small-image{
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 15px;
+    }
+}

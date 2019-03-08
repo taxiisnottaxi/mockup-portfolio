@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 默认字体是UTF-8 -->
+        <meta charset="UTF-8">
+        <!-- 告诉Internet Exployer使用所拥有的最好的引擎给用户带来最紧随潮流的体验 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 视觉窗口，声明使用设备宽度，将缩放比例设置为1 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <!-- 从谷歌网站链接字体及字体粗细过来,但是仅链接不行，还需要在自己的style.css里面应用他们 -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+        <!-- 链接BootStrap的CSS样式，并放在上面这一条的下面，方便后面使用 -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- 链接自创的CSS样式表，内有媒体查询等 -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <!-- 首先，在body里面添加一个最大的盒子，所有的盒子都在这个里面 -->
+        <div class="container">
+            <div class="row title">
+                <div class="title-div-1">
+                    <!-- 添加属性：指明其是位于标题空间的标识，alt属性：当图片无法加载的时候，会显示alt文本内容 -->
+                    <img class="title-logo" src="images/udalogo.png" alt="Uda Logo">
+                </div>
+                <!-- 使用Bootstrap架构设置对应属性，字体靠右，字体大写 -->
+                <div class="text-uppercase text-right title-div-2">
+                    <!-- 将标题变大，使其成为最大的标题，且字体变细 -->
+                    <h1 class="text-thin">Jane Doette</h1>
+                    <h4>Front-end Ninja</h4>
+                </div>
+            </div>
+
+            <!-- 添加水平分隔线并放在同一个级别，方便对齐 -->
+            <div class="row hr-div">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <!-- 添加大图 -->
+            <div class="row main-image-div-div">
+                <div class="col-md-12 main-image-div">
+                    <!-- 为了防止图片超出屏幕边缘，可以使用BootStrap的responsive类 -->
+                    <img class="img-responsive main-image" src="images/main-picture.png" alt="Main image!">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-muted h2-1">Feature Work</h2>
+                </div>
+            </div>
+
+            <!-- 添加text-center属性，将文本居中 -->
+            <div class="row text-center small-images-divs">
+                <div class="col-md-4 small-image-div">
+                    <img class="img-resposive small-image" src="images/1.png" alt="Appify kitten">
+                    <h2 class="text-uppercase h2-2">Appify</h2>
+                    <p>https://github.com/udacity/Appify</p>
+                </div>
+                <div class="col-md-4 small-image-div">
+                    <img class="img-resposive small-image" src="images/2.png" alt="Sunflower kitten">
+                    <h2 class="text-uppercase h2-2">sunflower</h2>
+                    <p>https://github.com/udacity/Sunflower</p>
+                </div>
+                <div class="col-md-4 small-image-div">
+                    <img class="img-resposive small-image" src="images/3.png" alt="Bokeh kitten">
+                    <h2 class="text-uppercase h2-2">bokeh</h2>
+                    <p>https://github.com/udacity/Bokeh</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
